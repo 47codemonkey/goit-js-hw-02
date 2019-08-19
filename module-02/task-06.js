@@ -1,0 +1,16 @@
+'use strict'
+
+const checkForSpam = string => {
+    let phrase = string.toLowerCase();
+
+    if (phrase.indexOf("sale") !== -1 || phrase.indexOf("spam") !== -1) {
+        return true;
+    }
+
+    return false;
+};
+
+console.log(checkForSpam('Latest technology news'));
+console.log(checkForSpam('JavaScript weekly newsletter'));
+console.log(checkForSpam('Get best sale offers now!'));
+console.log(checkForSpam('[SPAM] How to earn fast money?'));
