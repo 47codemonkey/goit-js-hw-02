@@ -1,14 +1,9 @@
 'use strict'
 
-const checkForSpam = string => {
-    let phrase = string.toLowerCase();
-
-    if (phrase.indexOf("sale") !== -1 || phrase.indexOf("spam") !== -1) {
-        return true;
-    }
-
-    return false;
-};
+const checkForSpam = function(str) {
+    const strLowerCase = str.toLowerCase();
+    return strLowerCase.includes('sale') || strLowerCase.includes('spam');
+  };
 
 console.log(checkForSpam('Latest technology news'));
 console.log(checkForSpam('JavaScript weekly newsletter'));

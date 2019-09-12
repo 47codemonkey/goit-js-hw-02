@@ -13,8 +13,11 @@ do {
     }
 } while (input !== null);
 
-for (let number of numbers) {
-    sum = sum + number;
+if (numbers && numbers.length) {
+    for (let number of numbers) {
+        sum = sum + number
+    }
+
 }
 
 alert(`Общая сумма чисел равна ${sum}`);
