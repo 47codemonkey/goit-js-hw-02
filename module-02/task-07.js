@@ -4,20 +4,17 @@ let input;
 let sum = 0;
 const numbers = [];
 
+
 do {
-    input = prompt('Введите число');
-    if (Number.isNaN(Number(input))) {
-        alert('Было введено не число, попробуйте еще раз');
-    } else {
+    input = prompt('Введи число');
+    if (input !== null) {
         numbers.push(Number(input));
     }
 } while (input !== null);
 
-if (numbers && numbers.length) {
+if (numbers.length !== 0) {
     for (let number of numbers) {
-        sum = sum + number
+        sum += number;
     }
-
+    console.log(`Общая сумма чисел равна ${sum}`);
 }
-
-alert(`Общая сумма чисел равна ${sum}`);
