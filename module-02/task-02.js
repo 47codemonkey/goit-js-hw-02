@@ -2,9 +2,9 @@
 
 function logItems(array) {
     let counter = 1;
-    for (let i = 0; i < array.length; i++) {
+    for (let i = 0; i < array.length; i+=1) {
         console.log(`${counter} - ${array[i]}`);
-        counter++;
+        counter += 1;
     }
 }
 
